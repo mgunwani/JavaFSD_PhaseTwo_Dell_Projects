@@ -1,0 +1,64 @@
+
+-- To list databases:
+
+	show databases;
+	
+-- To create new database:
+	
+	CREATE DATABASE simplilearndb;
+
+-- To use existing database:
+	
+	USE simplilearndb;
+	
+-- To check, which database is selected:
+	
+	SELECT DATABASE();
+	
+-- To check the list of tables under selected database:
+
+	SHOW TABLES;
+	
+-- To create table under selected database:
+
+	CREATE TABLE employees
+	(Id INT PRIMARY KEY AUTO_INCREMENT,
+	Name VARCHAR(200) NOT NULL,
+	Salary FLOAT NOT NULL)
+	
+-- To see the table:
+
+	SELECT * FROM employees;
+	
+-- To see the description or structure of the table:
+
+	DESC employees;
+	DESCRIBE employees;
+	
+-- To insert data in 'employees' table:
+
+	INSERT INTO employees(Name, Salary) VALUES('King Kochhar', 12000);
+	INSERT INTO employees(Name, Salary) VALUES('John Smith', 25000);
+	INSERT INTO employees(Name, Salary) VALUES('James Bond', 42000);
+	INSERT INTO employees(Name, Salary) VALUES('John Jacob', 30000);
+	INSERT INTO employees(Name, Salary) VALUES('Jimmy Gill', 22000);
+	INSERT INTO employees(Name, Salary) VALUES('Sarah Bowling', 32000);
+	
+-- To delete record by specific Id:
+
+	DELETE FROM employees WHERE id = 7;
+	
+-- To delete all records:	
+	
+	DELETE FROM employees;
+	
+-- To update record by specific Id:
+
+	UPDATE employees SET name = 'Gautam Bhalla', salary = 40000 WHERE id = 5;
+	
+-- To update all records:	
+	
+	UPDATE employees
+	SET name = 'Gautam Bhalla', salary = 40000;
+	
+	
