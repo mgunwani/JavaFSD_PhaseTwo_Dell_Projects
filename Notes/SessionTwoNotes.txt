@@ -1,0 +1,44 @@
+
+Spring Framework:
+
+	- Enterprise Application
+	- Supports the Dependency Injection using IOC Container
+	- Helps in developing Web Application using MVC Pattern.
+	- It makes the data integration using JDBC, Hibernate or JMS.
+	
+Spring Framework Core Components:
+
+	Core Containers:
+		Spring Core
+		Spring Beans
+		Spring Context
+		Spring Expressions
+
+	Spring AOP: (Aspect of Programming)	
+		Helps in seprating Business Logics with relevanant services such as Connection Pooling, Transaction Mangement, Logging and so on.
+		
+	Data Access Integration:
+		Helps in Connecting Spring applications with database.
+		DAO such as JDBC, Hibernate(ORM), Transaction, JMS.
+		
+	JEE and Web:
+		Helps in creating enterised-scaled web application.
+		Modules required are: spring-web, spring-mvc and spring-websocket.
+	
+--------------------------------------------------------------------------
+
+Spring IOC Container: (Inversion-of-control(IOC) Container)
+	- Responsible for intantiating, Configuring and Assembling the Spring Beans.
+	
+Spring Bean:
+	- Spring beans are java objects that are managed by the Spring Containers.
+
+-----------------------------------------------------------------------
+
+DI exists in two major variants:
+
+	Setter-Based Dependency Injection
+	Constructor-Based Dependency Injection
+	
+
+

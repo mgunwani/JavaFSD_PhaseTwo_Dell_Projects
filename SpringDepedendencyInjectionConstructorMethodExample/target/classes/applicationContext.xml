@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="employee" class="com.bhawnagunwani.ioc.Employee">
+		<constructor-arg type="int" value="101" />
+		<constructor-arg type="String" value="King" />
+		<constructor-arg type="String" value="Dell" />
+	</bean>
+	
+	<bean id="employee1" class="com.bhawnagunwani.ioc.Employee">
+	</bean>
+
+	<bean id="address" class="com.bhawnagunwani.ioc.Address">
+		<constructor-arg type="String" value="New Delhi" />
+		<constructor-arg type="String" value="Delhi" />
+		<constructor-arg type="String" value="India" />
+	</bean>
+	
+	<bean id="employee2" class="com.bhawnagunwani.ioc.Employee">
+		<constructor-arg type="int" value="101" />
+		<constructor-arg type="String" value="King" />
+		<constructor-arg type="String" value="Dell" />
+		<constructor-arg>
+			<ref bean="address"/>
+		</constructor-arg>
+	</bean>
+
+</beans>

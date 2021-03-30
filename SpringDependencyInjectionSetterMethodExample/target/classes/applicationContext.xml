@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="address" class="com.bhawnagunwani.ioc.Address">
+		<property name="City" value="New Delhi"></property>
+		<property name="State" value="Delhi"></property>
+		<property name="Country" value="India"></property>
+	</bean>
+
+
+	<bean id="employee" class="com.bhawnagunwani.ioc.Employee">
+		<property name="Id">
+			<value>101</value>
+		</property>
+		<property name="Name">
+			<value>King</value>
+		</property>
+		<property name="Company">
+			<value>Simplilearn</value>
+		</property>
+		<property name="Address">
+			<ref bean="address" />
+		</property>
+	</bean>
+
+	<bean id="employee1" class="com.bhawnagunwani.ioc.Employee">
+		<property name="Id" value="101"/>
+		<property name="Name" value="John" />
+		<property name="Company" value="Dell" />
+		<property name="Address" ref="address" />
+	</bean>
+
+
+</beans>
