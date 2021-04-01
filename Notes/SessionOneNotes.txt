@@ -61,4 +61,23 @@
 	UPDATE employees
 	SET name = 'Gautam Bhalla', salary = 40000;
 	
-	
+-----------------------------------------------
+
+Employee Management System:
+
+	1-Get Employees
+	2-Get Employee By ID
+	3-Insert New Employee
+	4-Update Existing Employee
+	5-Delete Existing Employee
+
+
+
+
+
+
+
+
+
+
+
